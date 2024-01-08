@@ -155,4 +155,4 @@ No known bugs at this time.
 
 ## Authors
 Michael Kisingi - [Github](https://github.com/KisingiMichael) / [Twitter](https://twitter.com/kisingi_michael)
-Jennifer Huang - [Github](https://github.com/rasuliomari)
+Rasuli Omari - [Github](https://github.com/rasuliomari)
