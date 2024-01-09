@@ -2,6 +2,7 @@
 """Endpoint (route) will be to return the status of your API"""
 from os import getenv
 from flask import Flask
+from models import storage
 from api.v1.views import app_views
 from flask_cors import CORS
 
