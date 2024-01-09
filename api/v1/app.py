@@ -12,6 +12,12 @@ CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 
 app.register_blueprint(app_views, url_prefix="/api/v1")
 
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return {"error": "Not found"}, 404
+
+
 if getenv("HBNB_API_HOST"):
     host = getenv("HBNB_API_HOST")
 else:
