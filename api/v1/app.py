@@ -18,6 +18,12 @@ def page_not_found(e):
     return {"error": "Not found"}, 404
 
 
+@app.teardown_appcontext
+def teardown(self):
+    """Removes the current SQLAlchemy Session"""
+    return storage.close()
+
+
 if getenv("HBNB_API_HOST"):
     host = getenv("HBNB_API_HOST")
 else:
